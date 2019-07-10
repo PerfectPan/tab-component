@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tab-container {
+    width: 50%;
+    height: 20%;
+    margin: 5% auto;
+    font-size: 20px;
+}
+
+.tab-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.tab-navbar {
+    border: 2px solid grey;
+    background-color: rgba(139, 133, 133, 0.2);
+    line-height: 200%;
+    text-align: center;
+    flex: 1;
+}
+
+.tab-content {
+    width: 100%;
+    height: 50%;
+    display: none;
+    border: 1px solid black;
+}
+
+.tab-navbar-active {
+    border-bottom: 3px solid black;
+}
+
+.tab-content-active {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    margin-left: 10px;
+}

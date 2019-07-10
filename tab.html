@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tab组件demo</title>
+    <link rel="stylesheet" href="./tab.css">
+</head>
+
+<body>
+    <div class="tab-container">
+        <div class="tab-nav">
+            <div class="tab-navbar tab-navbar-active">前端框架</div>
+            <div class="tab-navbar">编程语言</div>
+            <div class="tab-navbar">大学数学</div>
+        </div>
+        <div class="tab-content tab-content-active">
+            <ul>
+                <li>Vue</li>
+                <li>React</li>
+                <li>Angular</li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>JAVA</li>
+                <li>Python</li>
+                <li>Perl</li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <ul>
+                <li>高数</li>
+                <li>线性代数</li>
+                <li>概率论</li>
+            </ul>
+        </div>
+    </div>
+    <script type="module">
+        import Tab from './tab.js';
+        let tab = new Tab();
+        tab.addHandler('active', event => {
+            console.log(event.targetIndex);
+        });
+    </script>
+</body>
+
+</html>
